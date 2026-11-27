@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_x_edi_document_user,x_edi_document user,model_x_edi_document,group_edi_user,1,0,0,0
+access_x_edi_document_integration,x_edi_document integration,model_x_edi_document,group_edi_integration,1,1,1,0
+access_x_edi_document_admin,x_edi_document admin,model_x_edi_document,base.group_system,1,1,1,1
+access_x_edi_connection_user,x_edi_connection user,model_x_edi_connection,group_edi_user,1,0,0,0
+access_x_edi_connection_integration,x_edi_connection integration,model_x_edi_connection,group_edi_integration,1,1,1,0
+access_x_edi_connection_admin,x_edi_connection admin,model_x_edi_connection,base.group_system,1,1,1,1
