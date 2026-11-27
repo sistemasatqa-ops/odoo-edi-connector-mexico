@@ -1,7 +1,7 @@
 {
-    "name": "EDI Connector Mexico",
-    "summary": "Monitor the EDI documents exchanged with retail chains in Mexico through your EDI provider",
-    "version": "19.0.1.3.0",
+    "name": "EDI Walmart Mexico | EDIFACT | AS2 | ORDERS | RECADV | REMADV | Odoo Connector",
+    "summary": "EDI Mexico for Walmart and retail chains: EDIFACT purchase orders (ORDERS) arrive in Odoo as sales orders, with receipts (RECADV), payments (REMADV) and APERAK. Managed AS2 service by EDIDSA",
+    "version": "19.0.1.3.1",
     "category": "Sales/Sales",
     "author": "EDIDSA",
     "website": "https://edidsa.com.mx",
@@ -14,7 +14,7 @@
         "security/ir.model.access.csv",
         "views/views.xml",
     ],
-    "images": ["static/description/main_screenshot.png"],
+    "images": ["static/description/banner.png", "static/description/main_screenshot.png"],
     "installable": True,
     "application": True,
 }
