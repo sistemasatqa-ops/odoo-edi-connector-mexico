@@ -45,11 +45,25 @@
         <field name="name">Invoice</field>
         <field name="sequence">3</field>
     </record>
+    <record id="field_x_edi_document__x_doc_type_aperak" model="ir.model.fields.selection">
+        <field name="field_id" ref="field_x_edi_document__x_doc_type"/>
+        <field name="value">aperak</field>
+        <field name="name">Application error (APERAK)</field>
+        <field name="sequence">4</field>
+    </record>
     <record id="field_x_edi_document__x_doc_type_test" model="ir.model.fields.selection">
         <field name="field_id" ref="field_x_edi_document__x_doc_type"/>
         <field name="value">test</field>
         <field name="name">Connection test</field>
-        <field name="sequence">4</field>
+        <field name="sequence">5</field>
+    </record>
+    <record id="field_x_edi_document__x_pages" model="ir.model.fields">
+        <field name="model_id" ref="model_x_edi_document"/>
+        <field name="name">x_pages</field>
+        <field name="field_description">Pages</field>
+        <field name="ttype">integer</field>
+        <field name="state">manual</field>
+        <field name="required" eval="False"/>
     </record>
     <record id="field_x_edi_document__x_direction" model="ir.model.fields">
         <field name="model_id" ref="model_x_edi_document"/>

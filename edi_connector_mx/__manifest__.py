@@ -1,7 +1,7 @@
 {
     "name": "EDI Connector Mexico",
     "summary": "Monitor the EDI documents exchanged with retail chains in Mexico through your EDI provider",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.1.0",
     "category": "Sales/Sales",
     "author": "EDIDSA",
     "website": "https://edidsa.com.mx",
