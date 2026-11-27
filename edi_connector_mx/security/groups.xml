@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_edi_user" model="res.groups">
+        <field name="name">EDI Connector: User</field>
+        <field name="comment">Can see the EDI documents log and the connection status.</field>
+    </record>
+    <record id="group_edi_integration" model="res.groups">
+        <field name="name">EDI Connector: Integration (technical)</field>
+        <field name="comment">Only for the technical user of the EDI provider. Writes the log and the connection status.</field>
+        <field name="implied_ids" eval="[(4, ref('group_edi_user'))]"/>
+    </record>
+    <record id="base.group_system" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('group_edi_user'))]"/>
+    </record>
+</odoo>

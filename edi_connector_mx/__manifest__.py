@@ -1,0 +1,20 @@
+{
+    "name": "EDI Connector Mexico",
+    "summary": "Monitor the EDI documents exchanged with retail chains in Mexico through your EDI provider",
+    "version": "20.0.1.0.0",
+    "category": "Sales/Sales",
+    "author": "EDIDSA",
+    "website": "https://edidsa.com.mx",
+    "support": "octavio.cordero@edidsa.com.mx",
+    "license": "LGPL-3",
+    "depends": ["sale_management", "account"],
+    "data": [
+        "security/groups.xml",
+        "data/models.xml",
+        "security/ir_access.xml",
+        "views/views.xml",
+    ],
+    "images": ["static/description/main_screenshot.png"],
+    "installable": True,
+    "application": True,
+}
