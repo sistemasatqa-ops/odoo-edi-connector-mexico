@@ -1,82 +1,159 @@
 <section class="oe_container">
     <div class="oe_row oe_spaced">
         <div class="oe_span12">
-            <h2 class="oe_slogan" style="color:#714B67;">EDI Connector Mexico</h2>
-            <h3 class="oe_slogan">See every EDI document exchanged with your retail customers, right inside Odoo</h3>
+            <h2 class="oe_slogan" style="color:#14213d;">EDI Walmart México, directo a Odoo</h2>
+            <h3 class="oe_slogan">Las órdenes de compra EDIFACT entran solas como pedidos de venta, con su recibo y su pago</h3>
             <p class="text-center">
-                Connects your Odoo with the EDIDSA EDI service for retail chains in Mexico (Walmart and others).
-                Purchase orders arrive as sales orders, and every document is logged with its result.
-                <b>Data-only module: installs on Odoo Online, Odoo.sh and on-premise.</b>
+                Servicio EDI administrado por <b>EDIDSA</b> para proveedores de Walmart y cadenas en México.
+                Nosotros ponemos el canal AS2, los mapeos y el soporte; tú solo trabajas en Odoo.
+                <b>Módulo sin código Python: se instala en Odoo Online, Odoo.sh y on-premise.</b>
             </p>
+            <p class="text-center text-muted"><i>Managed EDI service for suppliers of Walmart and retail chains in Mexico:
+                EDIFACT purchase orders arrive as Odoo sales orders. AS2, mappings and support included.</i></p>
         </div>
     </div>
 </section>
 
 <section class="oe_container">
     <div class="oe_row oe_spaced">
-        <h3 class="oe_slogan">EDI documents log</h3>
+        <h3 class="oe_slogan">Cómo funciona</h3>
+        <div class="oe_span12">
+            <table style="width:100%; border-collapse:separate; border-spacing:10px; text-align:center;">
+                <tr>
+                    <td style="background:#ffffff; border:2px solid #14213d; border-radius:10px; padding:16px; width:30%;">
+                        <b style="font-size:18px;">1. Walmart y cadenas</b><br/>Envían órdenes de compra, recibos de mercancía y avisos de pago (EDIFACT)
+                    </td>
+                    <td style="font-size:26px; color:#9fb0d8;">&#10132;<br/><small style="font-size:12px;">AS2</small></td>
+                    <td style="background:#e3191c; color:#ffffff; border-radius:10px; padding:16px; width:30%;">
+                        <b style="font-size:18px;">2. EDIDSA</b><br/>Recibe por AS2, traduce, valida y genera el PDF de cada documento
+                    </td>
+                    <td style="font-size:26px; color:#9fb0d8;">&#10132;<br/><small style="font-size:12px;">API</small></td>
+                    <td style="background:#ffffff; border:2px solid #714B67; border-radius:10px; padding:16px; width:30%;">
+                        <b style="font-size:18px; color:#714B67;">3. Tu Odoo</b><br/>Pedido de venta creado, documentos ligados y bitácora con su estado
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">Qué ganas</h3>
+        <div class="oe_span12">
+            <table style="width:100%; border-collapse:separate; border-spacing:10px;">
+                <tr>
+                    <td style="background:#f6f7fb; border-radius:10px; padding:16px; vertical-align:top; width:33%;">
+                        <b style="color:#e3191c;">Cero captura</b><br/>Las órdenes llegan como pedidos de venta con cliente, dirección de entrega, productos, cantidades, precios, fechas y plazo de pago.
+                    </td>
+                    <td style="background:#f6f7fb; border-radius:10px; padding:16px; vertical-align:top; width:33%;">
+                        <b style="color:#e3191c;">Todo ligado a la orden</b><br/>Busca el número de orden de compra y ves su pedido, su recibo de mercancía y el aviso de pago donde se liquidó.
+                    </td>
+                    <td style="background:#f6f7fb; border-radius:10px; padding:16px; vertical-align:top; width:33%;">
+                        <b style="color:#e3191c;">Pagos conciliados</b><br/>El aviso de pago registra el cobro de cada factura y muestra las deducciones de la cadena.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background:#f6f7fb; border-radius:10px; padding:16px; vertical-align:top;">
+                        <b style="color:#e3191c;">PDF de cada documento</b><br/>Cada documento EDI queda en Odoo como PDF legible, listo para imprimir o reenviar.
+                    </td>
+                    <td style="background:#f6f7fb; border-radius:10px; padding:16px; vertical-align:top;">
+                        <b style="color:#e3191c;">Sin duplicados</b><br/>Una orden que llega dos veces no se vuelve a crear ni se cobra.
+                    </td>
+                    <td style="background:#f6f7fb; border-radius:10px; padding:16px; vertical-align:top;">
+                        <b style="color:#e3191c;">Soporte en México</b><br/>En español, en tu horario y por quien opera el canal AS2.
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">Conector de licencia vs. servicio EDIDSA</h3>
+        <div class="oe_span12">
+            <table class="table table-bordered" style="width:100%;">
+                <thead>
+                    <tr style="background:#14213d; color:#ffffff;">
+                        <th style="width:34%;"></th>
+                        <th style="width:33%;">Conector EDI típico (licencia)</th>
+                        <th style="width:33%; background:#e3191c;">EDIDSA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><b>Canal AS2 con la cadena</b></td><td>Lo consigues y configuras tú</td><td><b>Incluido y operado por EDIDSA</b></td></tr>
+                    <tr><td><b>Mapeos y certificación con Walmart México</b></td><td>Por tu cuenta o con un consultor</td><td><b>Los hacemos nosotros</b></td></tr>
+                    <tr><td><b>Documentos de México</b> (recibo, aviso de pago, APERAK)</td><td>Genéricos, sin adaptar a México</td><td><b>Formatos reales de Walmart México</b></td></tr>
+                    <tr><td><b>Código en tu base de datos</b></td><td>Módulo en Python; no siempre entra en Odoo Online</td><td><b>Sin Python: Odoo Online, Odoo.sh y on-premise</b></td></tr>
+                    <tr><td><b>Pago inicial</b></td><td>Licencia en dólares, de cientos a más de mil USD</td><td><b>Módulo gratis; servicio en pesos</b></td></tr>
+                    <tr><td><b>Soporte</b></td><td>Por ticket, en inglés, otro huso horario</td><td><b>En español, en México</b></td></tr>
+                    <tr><td><b>Si cambia el formato de la cadena</b></td><td>Actualizas y pagas tú</td><td><b>Lo ajustamos en el servicio</b></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">Bitácora de documentos EDI</h3>
         <div class="oe_span12 text-center">
-            <img class="img img-fluid border" src="main_screenshot.png" alt="EDI documents log"/>
+            <img class="img img-fluid border" src="main_screenshot.png" alt="Bitácora EDI"/>
         </div>
         <ul class="mt-3">
-            <li>Purchase orders, goods receipts, payment advices and invoices, received or sent.</li>
-            <li>Direct link to the sales order or invoice created in Odoo, and the PDF of each document with its billable pages.</li>
-            <li>Clear status (Processed, Sent, Accepted, Rejected, Error) and a message your team can act on.</li>
-            <li>Filters for errors and grouping by document or status.</li>
+            <li>Órdenes de compra, recibos de mercancía, avisos de pago, acuses y facturas, recibidos o enviados.</li>
+            <li>Liga directa al pedido de venta o factura en Odoo, con el PDF del documento y sus hojas.</li>
+            <li>Estado claro (Procesado, Enviado, Aceptado, Rechazado, Error) y un mensaje que tu equipo puede atender.</li>
+            <li>Búsqueda por número de orden de compra en todos los documentos.</li>
         </ul>
     </div>
 </section>
 
 <section class="oe_container">
     <div class="oe_row oe_spaced">
-        <h3 class="oe_slogan">Connection status</h3>
+        <h3 class="oe_slogan">Estado de la conexión</h3>
         <div class="oe_span12 text-center">
-            <img class="img img-fluid border" src="connection.png" alt="Connection status"/>
+            <img class="img img-fluid border" src="connection.png" alt="Estado de la conexión"/>
         </div>
-        <p class="mt-3">Know at a glance that the service is connected and when it last synchronized.</p>
+        <p class="mt-3 text-center">Sabes de un vistazo que el servicio está conectado y cuándo sincronizó por última vez.</p>
     </div>
 </section>
 
 <section class="oe_container">
     <div class="oe_row oe_spaced">
-        <h3 class="oe_slogan">Security</h3>
+        <h3 class="oe_slogan">Seguridad</h3>
         <ul>
-            <li>Two access groups: <b>EDI Connector: User</b> (read the log) and <b>EDI Connector: Integration</b>
-                (technical user of the EDI service only).</li>
-            <li>Your users cannot create or edit log entries: the log reflects exactly what the service processed.</li>
-            <li>No Python code in your database: safe to install and uninstall.</li>
+            <li>Dos grupos de acceso: <b>EDI Connector: User</b> (consulta la bitácora) y <b>EDI Connector: Integration</b>
+                (solo el usuario técnico del servicio).</li>
+            <li>Tus usuarios no pueden crear ni editar registros de la bitácora: refleja exactamente lo que procesó el servicio.</li>
+            <li>Sin código Python en tu base de datos: se instala y desinstala sin riesgo.</li>
+            <li>El canal AS2 vive en la infraestructura privada de EDIDSA; nadie más tiene acceso.</li>
         </ul>
     </div>
 </section>
 
 <section class="oe_container">
     <div class="oe_row oe_spaced">
-        <div class="oe_span12" style="background:#f8f4f7; border:1px solid #714B67; border-radius:8px; padding:24px;">
-            <h3 class="oe_slogan" style="color:#714B67;">Activation by EDIDSA (required)</h3>
+        <div class="oe_span12" style="background:#f6f7fb; border:2px solid #e3191c; border-radius:10px; padding:24px;">
+            <h3 class="oe_slogan" style="color:#14213d;">Activación por EDIDSA (requerida)</h3>
             <p class="text-center">
-                This module is the Odoo side of the EDIDSA EDI service. It does not exchange documents by itself.
-                <b>The EDI connection with your retail customers (AS2 channel, certificates, identifiers and document
-                set-up) is configured exclusively by EDIDSA</b> on its own infrastructure, together with the
-                connection to your Odoo.
+                Este módulo es el lado Odoo del servicio EDI de EDIDSA; por sí solo no intercambia documentos.
+                <b>La conexión con tus cadenas (canal AS2, certificados, identificadores y configuración de documentos)
+                la configura exclusivamente EDIDSA</b> en su propia infraestructura, junto con la conexión a tu Odoo.
             </p>
-            <ul>
-                <li>Walmart Mexico purchase orders created automatically as sales orders.</li>
-                <li>Invoices with the Walmart addenda sent from Odoo, with acceptance status back in the log (on request).</li>
-                <li>Goods receipt and payment advices linked to your orders and invoices (on request).</li>
-                <li>Set-up adapted to your products, customers and custom fields.</li>
-            </ul>
-            <h4 class="text-center mt-4" style="color:#714B67;">Pricing</h4>
+            <h4 class="text-center mt-4" style="color:#14213d;">Precios</h4>
             <p class="text-center">
-                The module is free. The EDIDSA EDI service is billed directly by EDIDSA in Mexican pesos:<br/>
-                <b>MXN 2.00 + VAT per page</b> of each document processed (purchase order, goods receipt,
-                payment advice, application error / APERAK, invoice).
+                El módulo es gratis. El servicio lo factura EDIDSA directamente, en pesos mexicanos:<br/>
+                <b>planes anuales con hojas incluidas</b>, y hoja adicional a <b>MXN 2.00 + IVA</b>
+                (orden de compra, recibo, aviso de pago, APERAK, factura).
             </p>
             <p class="text-center">
-                Every document and its billable pages appear in the EDI documents log, so you can check your
-                monthly statement line by line. Duplicates are not billed. Activation and AS2 set-up are quoted separately.
+                Cada documento y sus hojas aparecen en la bitácora, para que revises tu estado de cuenta línea por línea.
+                Los duplicados no se cobran. La instalación por cadena se cotiza aparte.
             </p>
-            <p class="text-center"><b>Request activation, a demo or a quote:</b>
-                <a href="mailto:octavio.cordero@edidsa.com.mx?subject=EDI%20Connector%20Mexico%20for%20Odoo">octavio.cordero@edidsa.com.mx</a>
+            <p class="text-center"><b>Solicita activación, demo o cotización:</b>
+                <a href="mailto:octavio.cordero@edidsa.com.mx?subject=EDI%20Walmart%20Mexico%20para%20Odoo">octavio.cordero@edidsa.com.mx</a>
             </p>
         </div>
     </div>
