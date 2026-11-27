@@ -10,7 +10,10 @@
                 <field name="x_date"/>
                 <field name="x_doc_type"/>
                 <field name="x_direction"/>
-                <field name="x_name"/>
+                <field name="x_name" string="Purchase order / reference"
+                       filter_domain="['|', '|', ('x_name', 'ilike', self), ('x_message', 'ilike', self), ('x_sale_order_id.client_order_ref', 'ilike', self)]"/>
+                <field name="x_sale_order_id"/>
+                <field name="x_invoice_id"/>
                 <field name="x_trading_partner"/>
                 <field name="x_sale_order_id"/>
                 <field name="x_invoice_id"/>
@@ -53,7 +56,10 @@
         <field name="model">x_edi_document</field>
         <field name="arch" type="xml">
             <search>
-                <field name="x_name"/>
+                <field name="x_name" string="Purchase order / reference"
+                       filter_domain="['|', '|', ('x_name', 'ilike', self), ('x_message', 'ilike', self), ('x_sale_order_id.client_order_ref', 'ilike', self)]"/>
+                <field name="x_sale_order_id"/>
+                <field name="x_invoice_id"/>
                 <field name="x_trading_partner"/>
                 <filter name="errors" string="Errors" domain="[('x_state', 'in', ('error', 'rejected'))]"/>
                 <filter name="received" string="Received" domain="[('x_direction', '=', 'in')]"/>
