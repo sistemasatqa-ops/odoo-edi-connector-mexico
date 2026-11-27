@@ -65,6 +65,22 @@
         <field name="state">manual</field>
         <field name="required" eval="False"/>
     </record>
+    <record id="field_x_edi_document__x_pdf" model="ir.model.fields">
+        <field name="model_id" ref="model_x_edi_document"/>
+        <field name="name">x_pdf</field>
+        <field name="field_description">PDF</field>
+        <field name="ttype">binary</field>
+        <field name="state">manual</field>
+        <field name="required" eval="False"/>
+    </record>
+    <record id="field_x_edi_document__x_pdf_name" model="ir.model.fields">
+        <field name="model_id" ref="model_x_edi_document"/>
+        <field name="name">x_pdf_name</field>
+        <field name="field_description">PDF file name</field>
+        <field name="ttype">char</field>
+        <field name="state">manual</field>
+        <field name="required" eval="False"/>
+    </record>
     <record id="field_x_edi_document__x_direction" model="ir.model.fields">
         <field name="model_id" ref="model_x_edi_document"/>
         <field name="name">x_direction</field>
